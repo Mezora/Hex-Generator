@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+
+:root {
+    overflow-x: hidden;
+}
+
+* {
+    font-family: 'Franklin Gothic Medium';
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #fff;
+    color: #fff;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav-wrapper {
+    height: 50px;
+    max-height: 50px;
+    min-height:50px;
+    width: 100%;
+    background-color: #111;
+    color: #ff1c1c;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    box-shadow: 0px 0px 10px #333;
+    padding: 20px;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    width: 800px;
+    height: 100%;
+    font-size:14px
+}
+
+.nav-logo {
+    text-transform: uppercase;
+}
+
+.fa-github {
+   color: #ff1c1c;
+   font-size: 20px;
+   cursor: pointer;
+}
+
+.color-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction:column;
+    height: 100%;
+    font-size:14px;
+    height: calc(100vh - 100px);
+    min-height: 200px;
+}
+
+.color-box-container {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    width: 350px;
+    height: 50px;
+    background-color: #111;
+    color: #777777;
+    font-size: 20px;
+    border-radius: 10px;
+    letter-spacing: 2px;
+}
+
+span {
+    margin-left: 10px;
+    color: #ff2f2f;
+}
+
+.color-btn {
+    margin-top: 20px;
+    outline: none;
+    border: none;
+    background-color: #111;
+    color: #777777;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 15px;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+.color-btn:hover {
+    color: #ff2f2f;
+    transform: translateY(-3%);
+    transition: 300ms ease-in-out;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    height: 50px;
+    max-height: 50px;
+    min-height: 50px;
+    width: 100%;
+    background-color:#111;
+    box-shadow: 0px 0px 8px #333;
+    padding: 20px;
+}
+
+.footer-container {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    width: 1000px;
+    max-width: 1280px;
+    height: 100%;
+    font-size:14px;
+    color: #777777;
+}
+
+.footer-container a {
+    color: #ff2f2f;
+    margin-right: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+@media (max-width: 400px) {
+    .color-box-container {
+        width: 240px;
+        font-size: 14px;
+    }
+    .color-btn {
+        width: 180px;
+        font-size: 14px;
+    }
+    footer {
+        padding: 10px;
+    }
+    .footer-container {
+        font-size: 12px;
+    }
+}
